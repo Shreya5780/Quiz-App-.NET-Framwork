@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Quiz.Models.TBL_QUESTIONS>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewAllQuestion</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Q_TEXT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OPA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OPB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OPC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OPD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBL_CATEGORY.CAT_NAME)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q_TEXT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OPA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OPB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OPC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OPD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBL_CATEGORY.CAT_NAME)
+            </td>
+            
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

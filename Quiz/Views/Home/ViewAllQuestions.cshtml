@@ -1,0 +1,152 @@
+﻿
+@using PagedList.Mvc
+@model PagedList.IPagedList<Quiz.Models.TBL_QUESTIONS>
+
+@{
+    ViewBag.Title = "ViewAllQuestions";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>ViewAllQuestions</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddQuestions")
+</p>
+<div style="overflow:scroll">
+
+    <table class="table table-responsive">
+
+        <tr>
+            <th>
+                Question
+            </th>
+            <th>
+                Option A
+            </th>
+            <th>
+                Option B
+            </th>
+            <th>
+                Option C
+            </th>
+            <th>
+                Option D
+            </th>
+            <th>
+                ANSWER
+            </th>
+            <th>
+                Category Name
+            </th>
+            <th></th>
+        </tr>
+
+        <br />
+        <tr>
+            <td>
+                2+3
+            </td>
+            <td>
+                2
+            </td>
+
+            <td>
+                3
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                C
+            </td>
+            <td>
+                gAopLQErkGt5VFMNj8pQkQ==
+            </td>
+        </tr>
+        <br />
+        <td>
+            11+11
+        </td>
+        <td>
+            22
+        </td>
+
+        <td>
+            33
+        </td>
+        <td>
+            23
+        </td>
+        <td>
+            11
+        </td>
+        <td>
+            A
+        </td>
+
+        <td>
+            gAopLQErkGt5VFMNj8pQkQ==
+        </td>
+
+        <br>
+        <tr>
+            <td>
+                14+15
+            </td>
+            <td>
+                23
+            </td>
+
+            <td>
+                29
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                18
+            </td>
+            <td>
+                B
+            </td>
+            <td>
+                gAopLQErkGt5VFMNj8pQkQ==
+            </td>
+           
+            <br>
+
+        </tr>
+        <tr>
+            <td>
+                1111
+            </td>
+            <td>
+                1
+            </td>
+
+            <td>
+                2
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                A
+            </td>
+            <td>
+                qybILc8k9nrIepXBIsYRZA==
+            </td>
+           
+            <br>
+
+        </tr>
+
+
+    </table>
+    </div>
